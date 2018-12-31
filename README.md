@@ -7,4 +7,4 @@ It  is Python GUI Game where you create a virtual team of real cricket players a
  1) Install PyQT5 Package
  * Open Command Prompt by using Shortcut (Window key+R) and type cmd.
  * Type following command in cmd :-
-# pip install pyqt5
+    pip install pyqt5
