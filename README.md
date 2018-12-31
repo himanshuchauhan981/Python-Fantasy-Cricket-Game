@@ -12,5 +12,4 @@ It  is Python GUI Game where you create a virtual team of real cricket players a
  * Open Command Prompt by using Shortcut (Window key+R) and type cmd.
  * Type following command in cmd :-
       * pip install db-sqlite3
- 3) [Install] (https://sqlitestudio.pl/index.rvt?act=download) Sqlite3 Studio
-  
+ 3) [Install](https://sqlitestudio.pl/index.rvt?act=download) Sqlite3 Studio
