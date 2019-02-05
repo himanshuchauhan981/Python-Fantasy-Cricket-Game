@@ -16,7 +16,7 @@ It  is Python GUI Game where you create a virtual team of real cricket players a
 
 ### Run main.py file on CMD.
 
-##Screenshots
+## Screenshots
 
 ![Pic1.png](https://registrationformusingjavascript.000webhostapp.com/Python%20GUI%20Cricket%20Game/Pic%201.png)
 
