@@ -15,3 +15,11 @@ It  is Python GUI Game where you create a virtual team of real cricket players a
  3) [Install](https://sqlitestudio.pl/index.rvt?act=download) Sqlite3 Studio
 
 ### Run main.py file on CMD.
+
+##Screenshots
+
+[Pic1.png](https://registrationformusingjavascript.000webhostapp.com/Python%20GUI%20Cricket%20Game/Pic%201.png)
+
+[Pic2.png](https://registrationformusingjavascript.000webhostapp.com/Python%20GUI%20Cricket%20Game/Pic%202.png)
+
+[Pic3.png](https://registrationformusingjavascript.000webhostapp.com/Python%20GUI%20Cricket%20Game/Pic%203.png)
