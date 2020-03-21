@@ -23,12 +23,12 @@
       <height>261</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <layout class="QHBoxLayout" name="playerListLayout">
      <item>
-      <widget class="QListWidget" name="list1"/>
+      <widget class="QListWidget" name="availablePlayer"/>
      </item>
      <item>
-      <spacer name="horizontalSpacer">
+      <spacer name="playerlistSpace">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -41,7 +41,7 @@
       </spacer>
      </item>
      <item>
-      <widget class="QListWidget" name="list2"/>
+      <widget class="QListWidget" name="selectedPlayer"/>
      </item>
     </layout>
    </widget>
@@ -54,30 +54,30 @@
       <height>31</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QHBoxLayout" name="checkboxLayout">
      <item>
-      <widget class="QRadioButton" name="Bat">
+      <widget class="QRadioButton" name="bat">
        <property name="text">
         <string>Bat</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="Bowl">
+      <widget class="QRadioButton" name="bowler">
        <property name="text">
         <string>Bowl</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="All">
+      <widget class="QRadioButton" name="allRounder">
        <property name="text">
         <string>All</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="WK">
+      <widget class="QRadioButton" name="wicketKeeper">
        <property name="text">
         <string>WK</string>
        </property>
@@ -90,62 +90,62 @@
      <rect>
       <x>10</x>
       <y>30</y>
-      <width>571</width>
+      <width>584</width>
       <height>51</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <layout class="QHBoxLayout" name="countLayout">
      <item>
-      <widget class="QLabel" name="Batsman_1">
+      <widget class="QLabel" name="batsmanText">
        <property name="text">
         <string>Batsmen (BAT)</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="Batsman_2">
+      <widget class="QLabel" name="batsmanCount">
        <property name="text">
         <string>##</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="Bowlers_1">
+      <widget class="QLabel" name="bowlerText">
        <property name="text">
         <string>Bowlers (BOWL)</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="Bowlers_2">
+      <widget class="QLabel" name="bowlerCount">
        <property name="text">
         <string>##</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="Allrounders_1">
+      <widget class="QLabel" name="allRounderText">
        <property name="text">
         <string>Allrounders (AR)</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="Allrounders_2">
+      <widget class="QLabel" name="allRounderCount">
        <property name="text">
         <string>##</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="Wicketkeeper_1">
+      <widget class="QLabel" name="wicketKeeperText">
        <property name="text">
         <string>Wicket-keeper (WK)</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="Wicketkeeper_2">
+      <widget class="QLabel" name="wicketKeeperCount">
        <property name="text">
         <string>##</string>
        </property>
@@ -162,44 +162,44 @@
       <height>31</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <layout class="QHBoxLayout" name="pointsLayout">
      <item>
-      <widget class="QLabel" name="pointAvailableText">
+      <widget class="QLabel" name="availablePointsText">
        <property name="text">
         <string>Point Available</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="pointAvailableBox">
+      <widget class="QLabel" name="availablePoints">
        <property name="text">
         <string>##</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="teamNameText">
+      <widget class="QLabel" name="teamText">
        <property name="text">
         <string>Team Name - </string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="teamNameBox">
+      <widget class="QLabel" name="team">
        <property name="text">
         <string>##</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="pointUsedText">
+      <widget class="QLabel" name="usedPointsText">
        <property name="text">
         <string>Point Used </string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="pointUsedBox">
+      <widget class="QLabel" name="usedPoints">
        <property name="text">
         <string>##</string>
        </property>
@@ -207,11 +207,6 @@
      </item>
     </layout>
    </widget>
-   <zorder>horizontalLayoutWidget_2</zorder>
-   <zorder>horizontalLayoutWidget</zorder>
-   <zorder>horizontalLayoutWidget_3</zorder>
-   <zorder>Allrounders_1</zorder>
-   <zorder>horizontalLayoutWidget_4</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -219,37 +214,37 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuManage_Teams">
+   <widget class="QMenu" name="menuItems">
     <property name="title">
      <string>Manage Teams</string>
     </property>
-    <addaction name="CREATE"/>
-    <addaction name="OPEN"/>
-    <addaction name="SAVE"/>
-    <addaction name="EVALUATE"/>
+    <addaction name="create"/>
+    <addaction name="open"/>
+    <addaction name="save"/>
+    <addaction name="evaluate"/>
    </widget>
-   <addaction name="menuManage_Teams"/>
+   <addaction name="menuItems"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="CREATE">
+  <action name="create">
    <property name="text">
     <string>CREATE Teams</string>
    </property>
   </action>
-  <action name="OPEN">
+  <action name="open">
    <property name="text">
     <string>OPEN Teams</string>
    </property>
   </action>
-  <action name="SAVE">
+  <action name="save">
    <property name="text">
     <string>SAVE Teams</string>
    </property>
   </action>
-  <action name="EVALUATE">
+  <action name="evaluate">
    <property name="text">
     <string>EVALUATE Teams</string>
    </property>
