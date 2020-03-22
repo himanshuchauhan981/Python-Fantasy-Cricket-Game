@@ -14,25 +14,25 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="teamLabel">
     <property name="geometry">
      <rect>
-      <x>110</x>
+      <x>120</x>
       <y>80</y>
-      <width>170</width>
-      <height>20</height>
+      <width>151</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>15</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Enter TEAM Name</string>
+     <string>Enter team Name</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="teamName">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -42,12 +42,12 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="submitButton">
     <property name="geometry">
      <rect>
       <x>130</x>
       <y>190</y>
-      <width>121</width>
+      <width>111</width>
       <height>41</height>
      </rect>
     </property>
@@ -62,7 +62,7 @@
      <x>0</x>
      <y>0</y>
      <width>400</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>

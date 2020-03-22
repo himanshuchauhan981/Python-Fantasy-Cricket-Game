@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="open">
+   <widget class="QLabel" name="openLabel">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -32,7 +32,7 @@
      <string>Enter Team Name to Open</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="openText">
+   <widget class="QLineEdit" name="openInput">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -67,7 +67,7 @@
      <x>0</x>
      <y>0</y>
      <width>400</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
