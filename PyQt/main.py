@@ -1,4 +1,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
+from new import New_Ui_MainWindow as createTeam
+from open import Open_Ui_MainWindow as openTeam
+from evaluate import Evaluate_Ui_MainWindow as evaluteTeam
 
 
 class Ui_MainWindow(object):
@@ -39,9 +42,22 @@ class Ui_MainWindow(object):
         self.team = QtWidgets.QLabel(self.horizontalLayoutWidget_4)
 
         self.evaluate = QtWidgets.QAction(MainWindow)
+        self.evaluate_team = QtWidgets.QMainWindow()
+        self.evaluate_screen = evaluteTeam()
+        self.evaluate_screen.setupUi(self.evaluate_team)
+
         self.open = QtWidgets.QAction(MainWindow)
+        self.open_team = QtWidgets.QMainWindow()
+        self.open_screen = openTeam()
+        self.open_screen.setupUi(self.open_team)
+
         self.save = QtWidgets.QAction(MainWindow)
+
         self.create = QtWidgets.QAction(MainWindow)
+        self.create_team = QtWidgets.QMainWindow()
+        self.create_screen = createTeam()
+        self.create_screen.setupUi(self.create_team)
+
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
 
     def setupUi(self, MainWindow):
@@ -124,6 +140,10 @@ class Ui_MainWindow(object):
         self.menuItems.addAction(self.evaluate)
         self.menubar.addAction(self.menuItems.menuAction())
 
+        self.create.triggered.connect(self.createTeamWindow)
+        self.open.triggered.connect(self.openTeamWindow)
+        self.evaluate.triggered.connect(self.evaluateTeamWindow)
+
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
@@ -153,6 +173,15 @@ class Ui_MainWindow(object):
         self.open.setText(_translate("MainWindow", "OPEN Teams"))
         self.save.setText(_translate("MainWindow", "SAVE Teams"))
         self.evaluate.setText(_translate("MainWindow", "EVALUATE Teams"))
+
+    def createTeamWindow(self):
+        self.create_team.show()
+
+    def openTeamWindow(self):
+        self.open_team.show()
+
+    def evaluateTeamWindow(self):
+        self.evaluate_team.show()
 
 
 if __name__ == "__main__":
